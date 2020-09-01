@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/
+         v2.0 | 20110126
+         License: none (public domain)
+      */
+
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      body,
+      .container {
+        box-sizing: border-box;
+
+        background-image: linear-gradient(to right, #fff1eb 0%, #ace0f9 100%);
+        text-align: center;
+      }
+      .container {
+        box-sizing: border-box;
+        width: 600px;
+        height: 900px;
+        margin: 80px auto;
+        padding: 20px;
+      }
+      .card {
+        width: 500px;
+        height: 800px;
+        margin: 20px auto;
+        background: url(1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border: rgb(241, 250, 250) solid 5px;
+        box-shadow: 5px 10px 50px 5px #a1a1a1;
+      }
+      .top {
+        margin: 80px auto;
+      }
+      .card .top h1 {
+        font-family: "Pacifico", cursive;
+        font-size: 120px;
+        color: white;
+        line-height: 100px;
+        margin-bottom: 30px;
+      }
+      .card .top p {
+        font-family: "Hind Madurai", sans-serif;
+        color: white;
+        font-size: 16px;
+      }
+      .center {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+      }
+      button {
+        width: 300px;
+        height: 60px;
+        margin: 15px;
+        border: rgb(255, 255, 255) solid 4px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-family: "Hind Madurai", sans-serif;
+        position: relative;
+        outline: none;
+      }
+      .one {
+        background-color: white;
+        color: rgb(130, 135, 207);
+      }
+      .two {
+        background-color: rgb(130, 135, 207);
+        color: rgb(255, 255, 255);
+        border: none;
+      }
+      .three {
+        background-color: rgba(255, 255, 255, 0.171);
+        color: rgb(255, 255, 255);
+      }
+      img {
+        width: 20px;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+      }
+      .two img {
+        width: 20px;
+        position: absolute;
+        right: 20px;
+        top: 22px;
+      }
+
+      .bottom {
+        margin-top: 90px;
+      }
+      .bottom p {
+        color: white;
+        font-family: "Hind Madurai", sans-serif;
+      }
+      button:hover {
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px 3px rgba(141, 135, 151, 0.568);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="top">
+          <a href="#"><h1>music★</h1></a>
+
+          <p>enjoy the wonderful world</p>
+        </div>
+        <div class="center">
+          <button class="one">
+            log in with your Account <img src="1.svg" alt="" />
+          </button>
+          <button class="two">
+            log in with Twitter <img src="2.svg" alt="" />
+          </button>
+        </div>
+        <div class="bottom">
+          <a href="#"><p>Don't have an account?</p></a>
+          <button class="three">sign up<img src="2.svg" alt="" /></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
